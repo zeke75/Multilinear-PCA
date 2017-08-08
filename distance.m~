@@ -1,0 +1,19 @@
+function d=distance(a,b,g,k)
+
+switch k
+    case 1
+        distance=norm(a-b,1);
+    case 2
+        distance=norm(a-b,2);
+    case 3
+        distance=-dot(a,b)/(sqrt(sum(a.^2))*sqrt(sum(b.^2)));
+    case 4
+        distance=-dot(a./g,b);
+    case 5
+        distance=norm((a-b)./g,1);
+    case 6
+        distance=norm((a-b)./sqrt(g),2);
+    case 7
+        distance=
+end
+        
